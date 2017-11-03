@@ -1,0 +1,79 @@
+.deploy-opt-wrapper
+  margin 10px 0
+  .deploy-tag-lable
+    display inline-block
+    text-align left
+  .deploy-btn
+    float right
+.deploy-congirm-wrapper
+  .deploy-congirm-list
+    margin 5px 0
+    padding 5px 0
+    .deploy-congirm-value
+      font-size 16px
+      font-weight bold
+      padding 2px 5px
+      background-color #ffbf00
+      margin-left 5px
+      border-radius 3px
+      color #fff
+
+.webhook-config-table-wrapper
+  .webhook-project-info
+    li
+      width 33%
+      float left
+      padding 10px 0
+    .webhook-project-lable
+      font-size 16px
+      font-weight 700
+      display inline-block
+      width 100px
+.webhook-config-wrapper
+  .webhook-deploy-step-wrapper
+    position fixed
+    top 0
+    bottom 0
+    left 0
+    right 0
+    background rgba(0,0,0,.9);
+    z-index 1
+    .webhook-deploy-close-wrapper
+      .webhook-deploy-close
+        font-size 40px
+        color #fff
+        float right
+        margin 20px 50px
+        cursor pointer
+    .webhook-deploy-step-content-wrapper
+      position absolute
+      bottom 50%
+      margin-bottom -300px
+      width 100%
+      left 0
+      padding 20px 25px
+      background #fff
+      .steps-content
+        min-height 250px
+        border 1px dashed #e9e9e9
+        border-radius 6px
+        background-color #fafafa
+        ul
+          width 100%
+          height 450px
+          li
+            float left
+            width 25%
+            height 250px
+            box-sizing border-box
+            padding 10px
+            p
+              line-height 2rem
+              &.success
+                color red
+                font-weight 700
+                font-size 14px
+              &.waring
+                color #000
+                font-weight 700
+                font-size 14px

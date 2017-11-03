@@ -1,0 +1,14 @@
+/* Base Application Styles */
+body {
+  background: #222;
+}
+.bold{
+  font-weight: 700;
+}
+.clear{
+  &:before,&:after{
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}

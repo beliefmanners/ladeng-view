@@ -1,0 +1,59 @@
+#app
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  width 100%
+.layout-wrapper
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  width 100%
+  .layout-sider-wrapper
+    .ant-layout-sider-children:before
+      content ' '
+      display table
+    .ant-layout-sider-children:after
+      content ' '
+      display table
+    .logo
+      height 32px
+      background #333
+      border-radius 6px
+      margin 16px
+  .layout-header-wrapper
+    background-color #ffffff
+    padding 0
+    .header-avatar-wrapper
+      float right
+      padding-top 10px
+      margin-right 30px
+    .layout-header-trigger
+      font-size 18px
+      line-height 64px
+      padding 0 16px
+      cursor pointer
+      transition color .3s
+    .header-toolbar-wrapper
+      float left
+      button a
+        padding 0 3px
+        color #333
+  .layout-footer-wrapper
+    text-align center
+  .layout-content-wrapper
+    margin  10px
+    position relative
+    background-color #ffffff
+    .content-layout-content-wrapper
+      padding 10px
+      margin 0 10px
+      background-color #ffffff
+      overflow-x hidden
+      overflow-y auto
+
+  .layout-content-sider-wrapper
+    background-color #fff
+
+

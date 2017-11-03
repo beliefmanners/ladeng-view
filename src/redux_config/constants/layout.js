@@ -1,0 +1,2 @@
+export const COLLAPS_TRUE = 'COLLAPS_TRUE_SEDIR';
+export const COLLAPS_FALSE = 'COLLAPS_FALSE_SEDIR';

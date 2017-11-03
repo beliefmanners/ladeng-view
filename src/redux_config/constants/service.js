@@ -1,0 +1,2 @@
+export const SERVICE_LIST = 'SERVICE-GET-LIST';
+export const SEARCH_SERVICE = 'SEARCH_SERVICE_BY_ID';
