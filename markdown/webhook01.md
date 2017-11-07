@@ -23,7 +23,7 @@ Github 开发者平台的文档中对 Webhook 的所能做的事是这样描述�
 1. 配置webhook；
 2. 一个外网可以访问的主机；
 3. 一个能够响应webhook的发布系统；
-![webhook工作流](http://git.gag.cn/laden/laden-one-view/raw/24206584087f90a00ef91f2a626ce2dc2d1a844b/markdown/images/push.jpg)
+![webhook工作流](../src/images/push.jpg)
 
 **简单实现**
 
@@ -87,6 +87,6 @@ $ cd {部署服务器的根目录}
 $ forever start server.js
 ```
 **配置webhook**
-![webhook](http://git.gag.cn/laden/laden-one-view/raw/24206584087f90a00ef91f2a626ce2dc2d1a844b/markdown/images/webhook.jpg)
+![webhook](../src/images/webhook.jpg)
 
 
