@@ -23,6 +23,7 @@ Github 开发者平台的文档中对 Webhook 的所能做的事是这样描述�
 1. 配置webhook；
 2. 一个外网可以访问的主机；
 3. 一个能够响应webhook的发布系统；
+![webhook工作流](../src/images/push.jpg)
 
 **简单实现**
 
@@ -61,7 +62,31 @@ var deployServer = http.createServer(function(request, response) {
     response.end('Not Found.')
 
   }
-})
+});
 
 deployServer.listen(PORT)
 ```   
+如果还需要实现更多，更复杂的功能，直接在 commands 数组中添加便是。此处我的博客根目录 html 与部署服务器根目录同属一个目录，所以配置常量 PATH = '../html'。只要启动了服务器，那么 Webhook 就可以通过类似于 http://192.168.xxx.xxx:9988/deploy/ 的路径来部署我的应用。
+```
+# 在后台启动部署服务器
+$ node server.js &
+```
+我以为服务器部署到这就完了，其实并没有，我遇到一些麻烦。
+
+**Run Node Server Forever**
+
+我在实际使用的时候发现，我的 Node 服务器时不时会自动停掉，具体原因我暂时还没有弄清楚。不过似乎很多人都遇到了这样的困扰，要解决这个问题，forever 是个不错的选择。借助 forever 这个库，它可以保证 Node 持续运行下去，一旦服务器挂了，它都会重启服务器。
+
+安装 forever：
+```
+$[sudo] npm install -g forever
+```
+运行：
+```
+$ cd {部署服务器的根目录}
+$ forever start server.js
+```
+**配置webhook**
+![webhook](../src/images/webhook.jpg)
+
+
